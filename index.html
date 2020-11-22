@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="fonts.css">  
+</head>
+<body>
+    <div id='containerCanvas'>
+       <canvas width="1920" height="1080"  id='sky'></canvas>
+       <img src='./assets/1x/Recurso 1.png' class='nubes' id= 'nube1'>
+        <img src='./assets/1x/Recurso 2.png' class='nubes' id='nube2'>
+        <img src='./assets/moon-png.png' id='moon'>  
+
+    </div>       
+    
+    
+    <div id='containerDunes'>     
+        <img src='./assets/images/fondoretocado_02.png' id='dunes'>
+        
+        <div id="iconsGroup">
+            <a href="./turismo.html" class='menuIcon' id="mosque">                
+                <span>Turismo Marrakech</span>
+                <img src="./export/mosque.svg">
+            </a>
+            <a href="./ceremonia_y_convite.html" class='menuIcon' id="food">
+                <span>Ceremonia y convite</span>        
+                <img src="./export/food.svg">                
+            <a href="./como_llegar.html" class='menuIcon' id="camels">
+                    <span>Cómo llegar</span>
+                    <img src="./export/camels.svg">
+                </a>            
+            <a href="./Nosotros.html" class='menuIcon' id="us">
+                <span>Nosotros</span>
+                <img src="./export/us.svg">
+            </a>
+            <a href="./alojamiento.html" class='menuIcon' id="mosque2">
+                <span>Alojamiento</span>
+                <img src="./export/mosque2.svg">
+            </a>
+            <a href="./cuanto_falta.html" class='menuIcon' id="time">
+                    <span>Faltan <span id='dias'></span><ul class='faltan'>                        
+                        <li class='faltan' id='horas'></li>
+                        <li class='faltan' id='segundos'></li>
+                    </ul></span>
+                    <img src="./export/time.svg">
+            </a>
+        </div>        
+        
+    </div>
+    <script src="canvas.js"></script>  
+    <script src="date.js"></script>  
+</body>
+</html>

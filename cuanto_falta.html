@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuánta falta</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v6.0"></script>
+    <div id='containerCanvas'>
+       <canvas width="1920" height="1080"  id='sky'></canvas>
+       <img src='./assets/1x/Recurso 1.png' class='nubes' id= 'nube1'>
+        <img src='./assets/1x/Recurso 2.png' class='nubes' id='nube2'>
+        <img src='./assets/moon-png.png' id='moon'>  
+
+    </div>       
+    
+    
+    <div id='containerDunes'>     
+        <img src='./assets/images/fondoretocado_02.png' id='dunes'>                     
+    </div>
+
+    <div id='containerSection'>
+        <main>
+            
+            <h1>Cuanto falta para la boda</h1>
+                      
+            <section>
+               <h4>Cuántos dias quedan</h4>
+               <p>Quedan ¡<span id='dias'></span>!.</p>
+               <h4>¿¿Cuántas horas es eso??</h4>
+               <p>Pues... <span id='dias'></span> son <span id='horas'></span>.</p>
+               <h4>Oh dios mío, ¡lo quiero en segundos!</h4>
+               <p>Vale vale, pues tenemos <span id='segundos'></span> restantes.</p>
+            </section>
+        </main>
+        <aside>
+            <section>
+                <a class="weatherwidget-io" href="https://forecast7.com/es/31d63n7d98/marrakesh/" data-label_1="¿Qué tiempo nos hará en la boda?" data-label_2="Previsión de Marrakech" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >¿Qué tiempo nos hará en la boda? Previsión de Marrakech</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+                </section>
+                <section>
+                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                    <div class="fb-comments" data-href="https://www.facebook.com/groups/2627801824131657" data-width="50" data-numposts="50"></div>
+                </section>            
+        </aside>
+    </div>
+    <a href="index.html" id='returnMenuBox'>
+        <img class='returnMenu' src="./assets/alfombra.png" alt="Volver al menú">
+        <span class='returnMenu' >Volver al menú</span>
+    </div>  
+    <script src="canvas.js"></script>
+    <script src="date.js"></script>
+    
+</body>
+</html>
